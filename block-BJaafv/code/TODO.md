@@ -4,21 +4,48 @@
 // first
 function sum(a, b) {
   return a + b;
-}
+} // if we call this function the output of this function is defined.
 
 // second
 function sum(a, b) {
   console.log(a + b);
-}
+} // if we call this function the output of this function in undefined.
 ```
 
 2. If we store the returned value of both functions above in variable `first` and `second` what will be the value of `first` and `second`.
 
+ let first
+  const first = (a,b) => {
+    return a + b;
+  } // value of first (a,b) => { return a + b; }
+
+  const second = (a, b) => {
+    console.log(a + b);
+  } // value of first (a,b) => { console.log(a + b);}
+
+
 3. What will be the output when you call above `sum` function (first) with three parameter like `sum(12, 24, 35)`. Explain why?
+
+
+function sum(a, b) {
+  return a + b;
+}
+
+sum(12, 24, 35);// 36 // when we call the above `sum` function (first) with three parameters like `sum(12, 24, 35)` the output will be displayed is 36 becouse in function be can take only two parameter a,b and in calling a function we placed three parameter.
 
 4. Can you store the first `sum` function in a variable named `add`. If yes why? If no why?
 
+const add = function sum(a, b) {
+  return a + b;
+}  // yes we store the first sum function in a variable named `add` by using Anonymous function expression.
+
+
 5. Declare a function named `sayHello` the accepts a parameter `name` and returns the name like `Hello Arya`.
+
+function sayHello(){
+  let name = 'Arya';
+  return `Hello` + " " + name ;
+}
 
 6. What will be the output of the function below and why?
 
@@ -43,14 +70,24 @@ function showMessage() {
   return message;
 }
 
-alert(userName); // Output 1
+alert(userName); // John
 
-showMessage(); // Output 2
+showMessage(); // 'Hello, John'
 
-alert(userName); // Output 3
+alert(userName); // John
 ```
 
 8. What is a Anonymous Function give example of three functions.
+
+let addNumber=function(a,b){
+  return a+b;
+}
+addNumber(2,4);
+
+let subTwoNumber=function(a,b){
+  return a-b;
+}
+subTwoNumber(54,67);
 
 9. Can function declaration be a Anonymous Function? Explain
 
@@ -70,3 +107,7 @@ Function starting with…
 "create…" – create something,
 "check…" – check something and return a boolean, etc.
 ```
+getReturnTheValue
+calcTwoNumber
+createUserInput
+checkTrueFalse
