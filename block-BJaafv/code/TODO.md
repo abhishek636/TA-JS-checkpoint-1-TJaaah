@@ -91,6 +91,8 @@ subTwoNumber(54,67);
 
 9. Can function declaration be a Anonymous Function? Explain
 
+The main difference between a function expression and a function declaration is the function name, which can be omitted in function expressions to create anonymous functions. A function expression can be used as an IIFE (Immediately Invoked Function Expression) which runs as soon as it is defined.
+
 10. Give 5 example of good naming convention for defining a function. You can read the details below to do that.
 
 ```md
